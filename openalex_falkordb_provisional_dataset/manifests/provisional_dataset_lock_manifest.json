@@ -1,0 +1,77 @@
+{
+  "manifest_version": "provisional_dataset_lock_v1",
+  "created_at_utc": "2026-10-21T10:50:29.552135+00:00",
+  "lock_type": "PROVISIONAL_SOURCE_LOCK",
+  "final_dataset_signoff": false,
+  "permitted_use": [
+    "Reproducible staging/provisional FalkorDB graph construction",
+    "Structural and ingestion validation with provenance retained"
+  ],
+  "not_yet_permitted_as_final": [
+    "Claiming that all author identities have been adjudicated",
+    "Final label generation or benchmark signoff",
+    "Final training/evaluation dataset release before label and temporal-leakage audits"
+  ],
+  "identity_review_status_at_lock": {
+    "canonical_decision_rows": 88,
+    "pending_rows": 88,
+    "explicitly_signed_or_approved_rows": 0,
+    "separate_review_response_rows": 8,
+    "response_rows_with_recorded_fields": 1,
+    "approved_overlay_rows": 0,
+    "identity_decisions_automatically_approved": 0
+  },
+  "raw_corpus": {
+    "original_path": "/content/gdrive_openalex/MyDrive/NoSQL-FalkorDB/dataset_v3_fresh/runs/network_network_greedy_700_v1_b074747a_0a1f45a3/raw/cohort_works_2018_2025_deduplicated_full_authorship.jsonl",
+    "expected_sha256": "1e6d9c3f3aeacffec9265ca0f7fcdf6e4b8dc0aa907d737edb2a29fce89ae96f",
+    "sha256_before_copy": "1e6d9c3f3aeacffec9265ca0f7fcdf6e4b8dc0aa907d737edb2a29fce89ae96f",
+    "sha256_after_copy_check": "1e6d9c3f3aeacffec9265ca0f7fcdf6e4b8dc0aa907d737edb2a29fce89ae96f",
+    "raw_unchanged_during_lock": true
+  },
+  "graph_build_guardrails": [
+    "Do not automatically merge Author IDs based only on name, ORCID, or institution similarity.",
+    "Do not delete or rewrite source authorship rows in the raw corpus.",
+    "Retain work ID and source authorship index as provenance for each imported authorship.",
+    "Keep unresolved identities flagged; do not silently assign fabricated canonical Author IDs.",
+    "Build in a provisional/staging graph namespace, not over a signed-off production graph.",
+    "Do not treat this manifest as human identity approval or final dataset signoff."
+  ],
+  "locked_files": {
+    "raw_corpus": {
+      "original_path": "/content/gdrive_openalex/MyDrive/NoSQL-FalkorDB/dataset_v3_fresh/runs/network_network_greedy_700_v1_b074747a_0a1f45a3/raw/cohort_works_2018_2025_deduplicated_full_authorship.jsonl",
+      "locked_path": "/content/gdrive_openalex/MyDrive/NoSQL-FalkorDB/dataset_v3_fresh/runs/network_network_greedy_700_v1_b074747a_0a1f45a3/dataset_locks/provisional_source_lock_v1_20261021T104959144251Z/raw/cohort_works_2018_2025_deduplicated_full_authorship.jsonl",
+      "sha256": "1e6d9c3f3aeacffec9265ca0f7fcdf6e4b8dc0aa907d737edb2a29fce89ae96f",
+      "size_bytes": 1292420185
+    },
+    "canonical_decisions": {
+      "original_path": "/content/gdrive_openalex/MyDrive/NoSQL-FalkorDB/dataset_v3_fresh/runs/network_network_greedy_700_v1_b074747a_0a1f45a3/audit/work_api_failure_diagnostic_v2/human_authorship_decisions_v1.csv",
+      "locked_path": "/content/gdrive_openalex/MyDrive/NoSQL-FalkorDB/dataset_v3_fresh/runs/network_network_greedy_700_v1_b074747a_0a1f45a3/dataset_locks/provisional_source_lock_v1_20261021T104959144251Z/governance/human_authorship_decisions_v1.csv",
+      "sha256": "8cab83be245c6738b22b90d8a62873482e6d344691ae992321489b66b5716cf7",
+      "size_bytes": 18587
+    },
+    "human_review_responses": {
+      "original_path": "/content/gdrive_openalex/MyDrive/NoSQL-FalkorDB/dataset_v3_fresh/runs/network_network_greedy_700_v1_b074747a_0a1f45a3/audit/work_api_failure_diagnostic_v2/p0_p1_human_review_responses_20261021T160155.csv",
+      "locked_path": "/content/gdrive_openalex/MyDrive/NoSQL-FalkorDB/dataset_v3_fresh/runs/network_network_greedy_700_v1_b074747a_0a1f45a3/dataset_locks/provisional_source_lock_v1_20261021T104959144251Z/governance/p0_p1_human_review_responses_20261021T160155.csv",
+      "sha256": "33275cd990d2fb81103eac4921755e4b0f5d5d3416f1250ee2ea2015f28500c7",
+      "size_bytes": 22157
+    },
+    "identity_case_inventory": {
+      "original_path": "/content/gdrive_openalex/MyDrive/NoSQL-FalkorDB/dataset_v3_fresh/runs/network_network_greedy_700_v1_b074747a_0a1f45a3/audit/work_api_failure_diagnostic_v2/four_step_adjudication_temporal_gate_v1_20261021T035536310406Z/identity_case_inventory.csv",
+      "locked_path": "/content/gdrive_openalex/MyDrive/NoSQL-FalkorDB/dataset_v3_fresh/runs/network_network_greedy_700_v1_b074747a_0a1f45a3/dataset_locks/provisional_source_lock_v1_20261021T104959144251Z/governance/identity_case_inventory.csv",
+      "sha256": "df45e19a009de679d953228acfff188e3c22d473bd2186289e117f9c510cedc1",
+      "size_bytes": 2673038
+    },
+    "crosswalk_source_inventory": {
+      "original_path": "/content/gdrive_openalex/MyDrive/NoSQL-FalkorDB/dataset_v3_fresh/runs/network_network_greedy_700_v1_b074747a_0a1f45a3/audit/work_api_failure_diagnostic_v2/four_step_adjudication_temporal_gate_v1_20261021T035536310406Z/crosswalk_source_inventory_unchanged_copy.csv",
+      "locked_path": "/content/gdrive_openalex/MyDrive/NoSQL-FalkorDB/dataset_v3_fresh/runs/network_network_greedy_700_v1_b074747a_0a1f45a3/dataset_locks/provisional_source_lock_v1_20261021T104959144251Z/governance/crosswalk_source_inventory_unchanged_copy.csv",
+      "sha256": "cd5459c831469e032f1942d035de920e9801722bb885dd32bd9bc7d7ca82ecae",
+      "size_bytes": 5889090
+    },
+    "approved_overlay_snapshot": {
+      "original_path": "/content/gdrive_openalex/MyDrive/NoSQL-FalkorDB/dataset_v3_fresh/runs/network_network_greedy_700_v1_b074747a_0a1f45a3/audit/work_api_failure_diagnostic_v2/four_step_adjudication_temporal_gate_v1_20261021T035536310406Z/adjudicated_overlay_approved_rows_only.csv",
+      "locked_path": "/content/gdrive_openalex/MyDrive/NoSQL-FalkorDB/dataset_v3_fresh/runs/network_network_greedy_700_v1_b074747a_0a1f45a3/dataset_locks/provisional_source_lock_v1_20261021T104959144251Z/governance/adjudicated_overlay_approved_rows_only.csv",
+      "sha256": "36ad80aac627037a50efa62299fe659e1df2dffe778af09ff743e0d4848a10be",
+      "size_bytes": 90
+    }
+  }
+}

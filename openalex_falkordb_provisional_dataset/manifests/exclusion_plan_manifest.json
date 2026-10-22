@@ -1,0 +1,28 @@
+{
+  "manifest_version": "provisional_exclusion_plan_v1",
+  "created_at_utc": "2026-10-21T10:58:13.059257+00:00",
+  "status": "EXCLUSION_PLAN_VALIDATED_GRAPH_NOT_YET_BUILT",
+  "purpose": "Exclude unresolved source authorship occurrences from a separate provisional graph build only.",
+  "raw_corpus_sha256": "1e6d9c3f3aeacffec9265ca0f7fcdf6e4b8dc0aa907d737edb2a29fce89ae96f",
+  "locked_decisions_sha256": "8cab83be245c6738b22b90d8a62873482e6d344691ae992321489b66b5716cf7",
+  "canonical_decisions_modified": false,
+  "raw_corpus_modified": false,
+  "falkordb_modified": false,
+  "automatic_identity_approvals": 0,
+  "source_occurrences_validated": 88,
+  "distinct_works_affected": 76,
+  "exclusion_key": [
+    "work_id_normalized",
+    "source_authorship_list_key",
+    "source_authorship_index_0based"
+  ],
+  "important": [
+    "This ledger is not a human identity decision.",
+    "Do not delete source rows or modify canonical decisions.",
+    "The graph importer must skip these occurrences before deriving graph edges.",
+    "Preserve the original authorship index when applying this filter.",
+    "Recompute affected graph edges and dependent labels after filtering.",
+    "Final training remains blocked until label and temporal-leakage validation passes."
+  ],
+  "ledger_path": "/content/gdrive_openalex/MyDrive/NoSQL-FalkorDB/dataset_v3_fresh/runs/network_network_greedy_700_v1_b074747a_0a1f45a3/dataset_builds/provisional_exclusion_plan_v1_20261021T105813019751Z/exclude_unresolved_authorships_v1.csv"
+}

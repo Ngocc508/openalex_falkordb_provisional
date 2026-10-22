@@ -1,0 +1,71 @@
+{
+  "manifest_version": "openalex_provisional_release_package_v1",
+  "release_id": "provisional_excluded88_v1_20261021T111533206730Z",
+  "created_at_utc": "2026-10-21T11:15:39.942559+00:00",
+  "release_status": "PROVISIONAL_RELEASE_CANDIDATE",
+  "final_dataset_signoff": false,
+  "verified_counts": {
+    "works": 55119,
+    "retained_authorship_occurrences": 1118807,
+    "excluded_occurrences": 88,
+    "distinct_works_with_exclusions": 76,
+    "source_index_map_rows": 1118807
+  },
+  "source_integrity": {
+    "expected_original_raw_sha256": "1e6d9c3f3aeacffec9265ca0f7fcdf6e4b8dc0aa907d737edb2a29fce89ae96f",
+    "source_raw_sha256_verified_from_manifest": true,
+    "original_raw_corpus_included_in_zip": false,
+    "original_raw_corpus_modified": false,
+    "canonical_decisions_modified": false,
+    "approved_overlay_modified": false,
+    "falkordb_modified": false
+  },
+  "included_artifacts": {
+    "data/cohort_works_2018_2025_provisional_filtered.jsonl": {
+      "source_path_at_packaging": "/content/gdrive_openalex/MyDrive/NoSQL-FalkorDB/dataset_v3_fresh/runs/network_network_greedy_700_v1_b074747a_0a1f45a3/dataset_builds/provisional_filtered_corpus_v1_20261021T110337388246Z/cohort_works_2018_2025_provisional_filtered.jsonl",
+      "size_bytes": 1292323834,
+      "sha256": "076548be5b6d51eb6816f71e0fbe5a5611ba0c388fa96b803028d07621f9b0f2"
+    },
+    "provenance/retained_authorship_source_index_map_v1.csv": {
+      "source_path_at_packaging": "/content/gdrive_openalex/MyDrive/NoSQL-FalkorDB/dataset_v3_fresh/runs/network_network_greedy_700_v1_b074747a_0a1f45a3/dataset_builds/provisional_filtered_corpus_v1_20261021T110337388246Z/retained_authorship_source_index_map_v1.csv",
+      "size_bytes": 33703673,
+      "sha256": "8f10f51e211e7f84deb94849d44d85839c736224c86a616dd6bbb8035ce7de50"
+    },
+    "provenance/excluded_occurrence_audit_v1.csv": {
+      "source_path_at_packaging": "/content/gdrive_openalex/MyDrive/NoSQL-FalkorDB/dataset_v3_fresh/runs/network_network_greedy_700_v1_b074747a_0a1f45a3/dataset_builds/provisional_filtered_corpus_v1_20261021T110337388246Z/excluded_occurrence_audit_v1.csv",
+      "size_bytes": 6649,
+      "sha256": "428730b339c5ec796f376517a4e87b1cd6f8724b4009c475251c88fb3cd43a8e"
+    },
+    "provenance/exclude_unresolved_authorships_v1.csv": {
+      "source_path_at_packaging": "/content/gdrive_openalex/MyDrive/NoSQL-FalkorDB/dataset_v3_fresh/runs/network_network_greedy_700_v1_b074747a_0a1f45a3/dataset_builds/provisional_exclusion_plan_v1_20261021T105813019751Z/exclude_unresolved_authorships_v1.csv",
+      "size_bytes": 131683,
+      "sha256": "adff9aad8f39f8dfb5faa50870410029183f3eeb34d8a26426b80b07c1e7931c"
+    },
+    "manifests/filtered_corpus_manifest_v1.json": {
+      "source_path_at_packaging": "/content/gdrive_openalex/MyDrive/NoSQL-FalkorDB/dataset_v3_fresh/runs/network_network_greedy_700_v1_b074747a_0a1f45a3/dataset_builds/provisional_filtered_corpus_v1_20261021T110337388246Z/filtered_corpus_manifest_v1.json",
+      "size_bytes": 2804,
+      "sha256": "063bd03ae8b8ed500719686b3cc9324d30875dee419f5f837f1c55cc902388d4"
+    },
+    "manifests/exclusion_plan_manifest.json": {
+      "source_path_at_packaging": "/content/gdrive_openalex/MyDrive/NoSQL-FalkorDB/dataset_v3_fresh/runs/network_network_greedy_700_v1_b074747a_0a1f45a3/dataset_builds/provisional_exclusion_plan_v1_20261021T105813019751Z/exclusion_plan_manifest.json",
+      "size_bytes": 1510,
+      "sha256": "cdfeb31cc045d5bed0ac5af7f85158b6009025c677549319e2f930138e685bbc"
+    },
+    "manifests/provisional_dataset_lock_manifest.json": {
+      "source_path_at_packaging": "/content/gdrive_openalex/MyDrive/NoSQL-FalkorDB/dataset_v3_fresh/runs/network_network_greedy_700_v1_b074747a_0a1f45a3/dataset_locks/provisional_source_lock_v1_20261021T104959144251Z/provisional_dataset_lock_manifest.json",
+      "size_bytes": 6008,
+      "sha256": "907694c62ada40253338cd2c2c3ed67267aecb42526f3b334d651ace7fed8df3"
+    },
+    "README.txt": {
+      "size_bytes": 1344,
+      "sha256": "1ea87a948036684d577b77ef931a7d433df41f7aacedd7a905285076c2853534"
+    }
+  },
+  "excluded_from_package": [
+    "Full original raw corpus",
+    "Complete audit run folders and intermediate files",
+    "Canonical decision CSV and review response packet",
+    "Model code, application code and FalkorDB database files",
+    "Unverified final train/validation/test labels or splits"
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "manifest_version": "provisional_filtered_corpus_v1",
+  "created_at_utc": "2026-10-21T11:04:57.874020+00:00",
+  "status": "FILTERED_CORPUS_CREATED_GRAPH_NOT_YET_BUILT",
+  "source_raw_path": "/content/gdrive_openalex/MyDrive/NoSQL-FalkorDB/dataset_v3_fresh/runs/network_network_greedy_700_v1_b074747a_0a1f45a3/dataset_locks/provisional_source_lock_v1_20261021T104959144251Z/raw/cohort_works_2018_2025_deduplicated_full_authorship.jsonl",
+  "source_raw_sha256_before": "1e6d9c3f3aeacffec9265ca0f7fcdf6e4b8dc0aa907d737edb2a29fce89ae96f",
+  "source_raw_sha256_after": "1e6d9c3f3aeacffec9265ca0f7fcdf6e4b8dc0aa907d737edb2a29fce89ae96f",
+  "source_exclusion_ledger": "/content/gdrive_openalex/MyDrive/NoSQL-FalkorDB/dataset_v3_fresh/runs/network_network_greedy_700_v1_b074747a_0a1f45a3/dataset_builds/provisional_exclusion_plan_v1_20261021T105813019751Z/exclude_unresolved_authorships_v1.csv",
+  "source_exclusion_count": 88,
+  "excluded_occurrence_count": 88,
+  "distinct_affected_works": 76,
+  "source_work_count": 55119,
+  "filtered_work_count": 55119,
+  "source_authorship_count": 1118895,
+  "filtered_authorship_count": 1118807,
+  "raw_corpus_modified": false,
+  "canonical_decisions_modified": false,
+  "approved_overlay_modified": false,
+  "falkordb_modified": false,
+  "automatic_identity_approvals": 0,
+  "outputs": {
+    "filtered_jsonl": {
+      "path": "/content/gdrive_openalex/MyDrive/NoSQL-FalkorDB/dataset_v3_fresh/runs/network_network_greedy_700_v1_b074747a_0a1f45a3/dataset_builds/provisional_filtered_corpus_v1_20261021T110337388246Z/cohort_works_2018_2025_provisional_filtered.jsonl",
+      "sha256": "076548be5b6d51eb6816f71e0fbe5a5611ba0c388fa96b803028d07621f9b0f2"
+    },
+    "retained_source_index_map": {
+      "path": "/content/gdrive_openalex/MyDrive/NoSQL-FalkorDB/dataset_v3_fresh/runs/network_network_greedy_700_v1_b074747a_0a1f45a3/dataset_builds/provisional_filtered_corpus_v1_20261021T110337388246Z/retained_authorship_source_index_map_v1.csv",
+      "sha256": "8f10f51e211e7f84deb94849d44d85839c736224c86a616dd6bbb8035ce7de50"
+    },
+    "excluded_occurrence_audit": {
+      "path": "/content/gdrive_openalex/MyDrive/NoSQL-FalkorDB/dataset_v3_fresh/runs/network_network_greedy_700_v1_b074747a_0a1f45a3/dataset_builds/provisional_filtered_corpus_v1_20261021T110337388246Z/excluded_occurrence_audit_v1.csv",
+      "sha256": "428730b339c5ec796f376517a4e87b1cd6f8724b4009c475251c88fb3cd43a8e"
+    }
+  },
+  "important": [
+    "Derived provisional graph input only; not the canonical raw corpus.",
+    "Preserve source indices through the sidecar map for provenance.",
+    "Recompute graph edges and all dependent labels from the filtered input.",
+    "Import into a new staging graph, not an existing production graph.",
+    "Final training signoff has not been granted."
+  ]
+}
