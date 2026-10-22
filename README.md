@@ -3,7 +3,7 @@
 **Đề tài**: Xây dựng đồ thị tri thức OpenAlex trên cơ sở dữ liệu đồ thị FalkorDB (Redis Graph Engine)  
 **Release Candidate**: `provisional_excluded88_v1_20261021T111533206730Z`  
 **Graph Name**: `falkordb_provisional_excluded88_v1`  
-**Thư mục làm việc chính**: `openalex_falkordb_provisional_dataset/`
+**Thư mục dự án**: Toàn bộ dự án đã được tinh gọn và tổ chức tại thư mục gốc duy nhất.
 
 ---
 
@@ -11,11 +11,11 @@
 
 | STT | Nội dung yêu cầu theo Rubric của Cô | Điểm | Trạng thái | Minh chứng & File bàn giao |
 |:---:|:---|:---:|:---:|:---|
-| **5.1** | **Xây dựng Database - Tạo Database** | **0.5** | ✅ Đạt | Khởi tạo graph `falkordb_provisional_excluded88_v1`, tạo Index cho `Work.work_id` và `Author.author_id` (xem [import_graph.py](file:///e:/HK1%202026-2027/NoSQL/00.%20DoAn/openalex_falkordb_provisional_excluded88_v1_20261021T111533206730Z/openalex_falkordb_provisional_dataset/import_graph.py)). |
-| **5.2** | **Xây dựng Database - Insert dữ liệu đầy đủ cho ứng dụng** | **0.5** | ✅ Đạt | Nạp thành công **55,119 Works**, **1,118,807 Authorships**, **314,279 Authors**, **2,462,025 cạnh COAUTHORED_WITH** (xem [import_graph.py](file:///e:/HK1%202026-2027/NoSQL/00.%20DoAn/openalex_falkordb_provisional_excluded88_v1_20261021T111533206730Z/openalex_falkordb_provisional_dataset/import_graph.py) & [build_edges.py](file:///e:/HK1%202026-2027/NoSQL/00.%20DoAn/openalex_falkordb_provisional_excluded88_v1_20261021T111533206730Z/openalex_falkordb_provisional_dataset/build_edges.py)). |
+| **5.1** | **Xây dựng Database - Tạo Database** | **0.5** | ✅ Đạt | Khởi tạo graph `falkordb_provisional_excluded88_v1`, tạo Index cho `Work.work_id` và `Author.author_id` (xem [import_graph.py](file:///e:/HK1%202026-2027/NoSQL/00.%20DoAn/openalex_falkordb_provisional_excluded88_v1_20261021T111533206730Z/import_graph.py)). |
+| **5.2** | **Xây dựng Database - Insert dữ liệu đầy đủ cho ứng dụng** | **0.5** | ✅ Đạt | Nạp thành công **55,119 Works**, **1,118,807 Authorships**, **314,279 Authors**, **2,462,025 cạnh COAUTHORED_WITH** (xem [import_graph.py](file:///e:/HK1%202026-2027/NoSQL/00.%20DoAn/openalex_falkordb_provisional_excluded88_v1_20261021T111533206730Z/import_graph.py) & [build_edges.py](file:///e:/HK1%202026-2027/NoSQL/00.%20DoAn/openalex_falkordb_provisional_excluded88_v1_20261021T111533206730Z/build_edges.py)). |
 | **5.3** | **Xây dựng Database - Dữ liệu đáp ứng truy vấn cơ bản** | **0.5** | ✅ Đạt | 6 câu truy vấn Cypher cơ bản (tra cứu bài báo, hồ sơ tác giả, lọc theo năm...) (xem [cypher_queries.cyp](file:///e:/HK1%202026-2027/NoSQL/00.%20DoAn/openalex_falkordb_provisional_excluded88_v1_20261021T111533206730Z/cypher_queries.cyp)). |
 | **5.4** | **Xây dựng Database - Dữ liệu đáp ứng truy vấn nâng cao** | **0.5** | ✅ Đạt | 5 câu truy vấn Cypher nâng cao (Top tác giả năng suất, Top cặp hợp tác, Friends-of-friends cho Link Prediction, Shortest Path...) (xem [cypher_queries.cyp](file:///e:/HK1%202026-2027/NoSQL/00.%20DoAn/openalex_falkordb_provisional_excluded88_v1_20261021T111533206730Z/cypher_queries.cyp)). |
-| **6** | **Import/Export dữ liệu; Backup và Restore dữ liệu** | **0.5** | ✅ Đạt | - Import: [import_graph.py](file:///e:/HK1%202026-2027/NoSQL/00.%20DoAn/openalex_falkordb_provisional_excluded88_v1_20261021T111533206730Z/openalex_falkordb_provisional_dataset/import_graph.py)<br>- Export: [export_graph.py](file:///e:/HK1%202026-2027/NoSQL/00.%20DoAn/openalex_falkordb_provisional_excluded88_v1_20261021T111533206730Z/openalex_falkordb_provisional_dataset/export_graph.py) (xuất CSV/JSON)<br>- Backup & Restore: [backup_restore.py](file:///e:/HK1%202026-2027/NoSQL/00.%20DoAn/openalex_falkordb_provisional_excluded88_v1_20261021T111533206730Z/openalex_falkordb_provisional_dataset/backup_restore.py) (RDB snapshot `dump.rdb` 140.71 MB). |
+| **6** | **Import/Export dữ liệu; Backup và Restore dữ liệu** | **0.5** | ✅ Đạt | - Import: [import_graph.py](file:///e:/HK1%202026-2027/NoSQL/00.%20DoAn/openalex_falkordb_provisional_excluded88_v1_20261021T111533206730Z/import_graph.py)<br>- Export: [export_graph.py](file:///e:/HK1%202026-2027/NoSQL/00.%20DoAn/openalex_falkordb_provisional_excluded88_v1_20261021T111533206730Z/export_graph.py) (xuất CSV/JSON)<br>- Backup & Restore: [backup_restore.py](file:///e:/HK1%202026-2027/NoSQL/00.%20DoAn/openalex_falkordb_provisional_excluded88_v1_20261021T111533206730Z/backup_restore.py) (RDB snapshot `dump.rdb` 140.71 MB). |
 | **7.1** | **Triển khai truy vấn dữ liệu cơ bản trên GUI Tool** | **0.5** | ✅ Đạt | Hướng dẫn kết nối RedisInsight / FalkorDB Browser tại cổng `5540`, trực quan hóa đồ thị 2D/3D (xem Mục 7). |
 | **7.2** | **Triển khai truy vấn dữ liệu nâng cao trên GUI Tool** | **0.5** | ✅ Đạt | Chạy trực tiếp các câu lệnh phân tích mạng lưới đồng tác giả trên GUI Tool (xem Mục 7). |
 | **8** | **Triển khai Database kết nối CSDL với phần mềm ứng dụng** | **0.5** | ✅ Đạt | Xây dựng hoàn chỉnh Web Dashboard [app.py](file:///e:/HK1%202026-2027/NoSQL/00.%20DoAn/openalex_falkordb_provisional_excluded88_v1_20261021T111533206730Z/app.py) kết nối thời gian thực với FalkorDB tại `http://localhost:8080`. |
@@ -63,11 +63,11 @@ graph LR
 
 ### 5.2. Insert Dữ liệu đầy đủ cho ứng dụng (0.5 điểm)
 
-- **Script Data Loader**: [import_graph.py](file:///e:/HK1%202026-2027/NoSQL/00.%20DoAn/openalex_falkordb_provisional_excluded88_v1_20261021T111533206730Z/openalex_falkordb_provisional_dataset/import_graph.py)
+- **Script Data Loader**: [import_graph.py](file:///e:/HK1%202026-2027/NoSQL/00.%20DoAn/openalex_falkordb_provisional_excluded88_v1_20261021T111533206730Z/import_graph.py)
   - Tự động xóa graph cũ nếu có, khởi tạo Index trên `Work(work_id)` và `Author(author_id)`.
   - Nạp dữ liệu theo lô (Batch size = 5,000 items) bằng mệnh đề `UNWIND`.
   - Thời gian nạp: **42.32 giây**.
-- **Script Xây dựng mạng lưới đồng tác giả**: [build_edges.py](file:///e:/HK1%202026-2027/NoSQL/00.%20DoAn/openalex_falkordb_provisional_excluded88_v1_20261021T111533206730Z/openalex_falkordb_provisional_dataset/build_edges.py)
+- **Script Xây dựng mạng lưới đồng tác giả**: [build_edges.py](file:///e:/HK1%202026-2027/NoSQL/00.%20DoAn/openalex_falkordb_provisional_excluded88_v1_20261021T111533206730Z/build_edges.py)
   - Duyệt các bài báo và tự động tính toán trọng số `weight`, `first_year`, `last_year` cho các cạnh `COAUTHORED_WITH`.
   - Thời gian xử lý: **18.06 giây**.
 - **Kết quả kiểm định số lượng (Khớp 100% với release manifest)**:
@@ -189,7 +189,7 @@ RETURN length(p) AS Degrees_Of_Separation, [n IN nodes(p) | n.author_id] AS Coll
 ## MỤC 6: IMPORT/EXPORT DỮ LIỆU; BACKUP VÀ RESTORE DỮ LIỆU (0.5 ĐIỂM)
 
 ### 6.1. Import Dữ liệu
-- Sử dụng file [import_graph.py](file:///e:/HK1%202026-2027/NoSQL/00.%20DoAn/openalex_falkordb_provisional_excluded88_v1_20261021T111533206730Z/openalex_falkordb_provisional_dataset/import_graph.py) để nạp dữ liệu từ `data/cohort_works_2018_2025_provisional_filtered.jsonl` (dung lượng 1.29 GB).
+- Sử dụng file [import_graph.py](file:///e:/HK1%202026-2027/NoSQL/00.%20DoAn/openalex_falkordb_provisional_excluded88_v1_20261021T111533206730Z/import_graph.py) để nạp dữ liệu từ `data/cohort_works_2018_2025_provisional_filtered.jsonl` (dung lượng 1.29 GB).
 - Đối soát toàn vẹn với `retained_authorship_source_index_map_v1.csv` và `excluded_occurrence_audit_v1.csv`.
 - Lệnh chạy:
   ```bash
@@ -302,7 +302,7 @@ python app.py 8080
 
 ## KẾT QUẢ BENCHMARK ĐỘ TRỄ TRUY VẤN (QUERY LATENCY)
 
-Kết quả đo đạc thực tế thông qua [benchmark.py](file:///e:/HK1%202026-2027/NoSQL/00.%20DoAn/openalex_falkordb_provisional_excluded88_v1_20261021T111533206730Z/openalex_falkordb_provisional_dataset/benchmark.py):
+Kết quả đo đạc thực tế thông qua [benchmark.py](file:///e:/HK1%202026-2027/NoSQL/00.%20DoAn/openalex_falkordb_provisional_excluded88_v1_20261021T111533206730Z/benchmark.py):
 
 | Nghiệp vụ truy vấn | Hàm trong `queries.py` | Độ trễ trung bình | Độ trễ tối thiểu | Số bản ghi trả về | Đánh giá |
 |:---|:---|:---:|:---:|:---:|:---|
