@@ -103,6 +103,7 @@ def restore_backup(backup_file=None):
     print("==================================================")
     
     if backup_file is None:
+        # Tự động tìm file backup mới nhất trong thư mục backups
         if not os.path.exists(BACKUP_DIR):
             print(f"[LỖI] Thư mục {BACKUP_DIR} không tồn tại!")
             return False
