@@ -1,7 +1,5 @@
-# TOÀN BỘ NGỮ CẢNH ĐỒ ÁN NoSQL: FALKORDB OPENALEX KNOWLEDGE GRAPH
+# ĐỒ ÁN NoSQL: FALKORDB OPENALEX KNOWLEDGE GRAPH
 > **Tài liệu tham chiếu toàn diện (Master Context Document)**  
-> *Dành cho Nhà phát triển, Giảng viên chấm điểm hoặc Trợ lý AI đọc nhanh để nắm bắt 100% ngữ cảnh, kiến trúc, dữ liệu và cách vận hành dự án mà không cần mở nhiều file khác.*
-
 ---
 
 ## 1. THÔNG TIN CHUNG VÀ BỐI CẢNH DỰ ÁN
